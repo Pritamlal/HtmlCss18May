@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins','sans-serif';
+}
+
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height:100vh;
+    background: #aefaff;
+}
+
+.container{
+    line-height: 2.5;
+}
+
+.container,
+.container .avatar,
+.social-icons a{
+    background: #f6f7f4;
+    box-shadow: -3px -3px 7px #f80303, 3px 3px 5px #0404ff;
+}
+
+.profile-photo img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+.container{
+    position:relative;
+    width:360px;
+    padding:25px;
+    border-radius: 9% 9% 9% 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    line-height: 2.5;
+}
+.avatar{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+
+.container .name{
+    font-size: 25px;
+    font-weight: 600;
+    color:#3e405f;
+    margin:6px 0 5px 0;
+    text-transform: uppercase;
+}
+
+.container .position{
+    color:#3e405f;
+    font-weight: 500;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.description{
+    text-align:center;
+    margin:6px 0;
+    color:#44476a;
+    font-weight: 350;
+    font-size:16px;
+}
+.container .social-icons{
+    margin:15px 0 20px 0;
+}
+.social-icons a{
+    position:relative;
+    height:40px;
+    width:40px;
+    margin:0 5px;
+    display:inline-block;
+    text-decoration: none;
+    border-radius: 20% 0 20% 0;
+}
+
+.social-icons a:hover::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    border-radius:20% 0 20% 0;
+    background:#ecf0f3;
+    box-shadow: inset -3px -3px 7px #f60707,inset 3px 3px 5px #0909f0;
+}
+
+.social-icons a i{
+    position: relative;
+    z-index:3;
+    text-align: center;
+    width: 100%;
+    height:100%;
+    margin-top: 12px;
+}
+
+.social-icons a.fb i{
+    color:#1877f2;
+}
+
+.social-icons a.x i{
+    color:#f50000;
+}
+
+.social-icons a.git i{
+    color:#000;
+}
+
+.social-icons a.dr i{
+    color:#ea4c89;
+}
